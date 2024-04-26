@@ -61,8 +61,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("App", style: TextStyle(color: Colors.white)),
-        backgroundColor: Colors.deepPurple,
+        title: Text("Calculatrice", style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold)),
+        backgroundColor: Colors.black,
       ),
       body: Container(
         color: Colors.black,
@@ -74,7 +74,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
                 alignment: Alignment.bottomRight,
                 padding: EdgeInsets.all(20),
                 width: 500,
-                color: Colors.white,
+                color: Colors.black,
                 child: Text(
                     "$_digitOnScreen",
                     style: TextStyle(
@@ -88,7 +88,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
             Expanded(
               flex: 2,
                child: Container(
-                 color: Colors.white10,
+                 color: Colors.black,
                  child: Column(
                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                    children: [
